@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSC 173 Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"
+      integrity="sha512-SGWgwwRA8xZgEoKiex3UubkSkV1zSE1BS6O4pXcaxcNtUlQsOmOmhVnDwIvqGRfEmuz83tIGL13cXMZn6upPyg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+    <div class="content">
+      <section>
+        <h1>Assignment 3: Interactive Design</h1>
+
+        <p>
+          <strong>Brian Almaguer</strong><br />
+          <strong>Lukas Dolansky</strong><br />
+          <strong>Amrin Sandhar</strong>
+        </p>
+      </section>
+      <section>
+        <h2>Primary Visualization</h2>
+        <select id="selectYear" onchange="updateVisual()"></select>
+        <label for="selectYear">Year</label>
+
+        <br />
+        <select id="selectRank" onchange="updateVisual()"></select>
+        <label for="selectRank">Ranking</label>
+
+        <br />
+        <select id="displayMode" onchange="init()">
+          <option value="total">Total</option>
+          <option value="growth">Growth</option>
+        </select>
+        <label for="displayMode">Display Mode</label>
+
+        <br />
+        <button id="playButton" onclick="playAnimation()">
+          Play Animation
+        </button>
+        <br />
+        <div id="vis" width="500px"></div>
+      </section>
+      <section>
+        <h2>Write Up plus Bar Race</h2>
+        <p>
+          Link to Kaggle: https://www.kaggle.com/datasets/whenamancodes/internet
+        </p>
+        <iframe src="obv/index.html" width="100%" height="1645px"></iframe>
+      </section>
+    </div>
+    <script src="a3.js"></script>
+  </body>
+</html>
