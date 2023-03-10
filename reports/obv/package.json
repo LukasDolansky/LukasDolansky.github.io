@@ -1,0 +1,14 @@
+{
+  "name": "8d92cc6a19f9ad4b",
+  "main": "8d92cc6a19f9ad4b@180.js",
+  "version": "180.0.0",
+  "homepage": "https://observablehq.com/d/8d92cc6a19f9ad4b",
+  "author": {
+    "name": "Internet Surfers",
+    "url": "https://observablehq.com/@internetsurfers"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
